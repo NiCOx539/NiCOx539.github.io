@@ -458,7 +458,6 @@ and (min-width :1200px) {
 	background:none;
 	border-right:none;
 	height:100%;
-	color: #FFF;
 	top:0;
 }
 #primary-nav > li.last > a:after,
@@ -480,6 +479,7 @@ and (min-width :1200px) {
 	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);
 	-moz-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);
 	box-shadow:inset 0 0 6px rgba(0,0,0,0.2);
+	color: #FFF;
 	left:-1px;
 	padding:30px 25px 30px 27px;
 }
