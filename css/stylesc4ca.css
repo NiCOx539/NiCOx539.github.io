@@ -458,6 +458,7 @@ and (min-width :1200px) {
 	background:none;
 	border-right:none;
 	height:100%;
+	color: #FFF;
 	top:0;
 }
 #primary-nav > li.last > a:after,
