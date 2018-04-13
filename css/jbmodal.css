@@ -1,0 +1,161 @@
+/* CSS Document */
+.jbmodal {
+	cursor: pointer;
+    -webkit-transition: all 0.165s ease;
+    -moz-transition: all 0.165s ease;
+    -ms-transition: all 0.165s ease;
+    -o-transition: all 0.165s ease;
+    transition: all 0.165s ease;
+}
+.jbmodal:hover {
+    -webkit-transition: all 0.165s ease;
+    -moz-transition: all 0.165s ease;
+    -ms-transition: all 0.165s ease;
+    -o-transition: all 0.165s ease;
+    transition: all 0.165s ease;
+}
+
+.jbmodal-pos {
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
+	top: 10%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 1050;
+}
+.jbmodal-box {
+	position: relative;
+	width: 560px;
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #ffffff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: none;
+	z-index: 1050;
+}
+.jbmodal-box .jbmodal-title {
+	margin: 0 0 15px;
+}
+.jbmodal-box .jbmodal-img {
+	position: relative;
+	text-align: center;
+	margin: 0 0 15px;
+}
+.jbmodal-box .jbmodal-img img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 0px;
+}
+.jbmodal-box .jbmodal-img > span {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+.jbmodal-box .jbmodal-img > span.jbmodal-prev { left: 0; }
+.jbmodal-box .jbmodal-img > span.jbmodal-next { right: 0; }
+.jbmodal-box .jbmodal-img > span .fa {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	background: transparent;
+	opacity: 0.75;
+	position: absolute;
+	top: 45%;
+	-webkit-transition: all 0.165s ease;
+	-moz-transition: all 0.165s ease;
+	-ms-transition: all 0.165s ease;
+	-o-transition: all 0.165s ease;
+	transition: all 0.165s ease;
+}
+.jbmodal-box .jbmodal-img > span:hover .fa {
+	opacity: 1.0;
+	background: #fff;
+	color: #000;
+}
+.jbmodal-box .jbmodal-img > span.jbmodal-prev .fa { left: 0; }
+.jbmodal-box .jbmodal-img > span.jbmodal-next .fa { right: 0; }
+.jbmodal-box .jbmodal-img a {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+.jbmodal-box .jbmodal-caption {
+	margin: 0 0 15px;
+}
+.jbmodal-box .jbmodal-content {
+	
+}
+.jbmodal-box .jbmodal-controls {
+	position: absolute;
+	top: -16px;
+	right: -16px;
+}
+.jbmodal-box .jbmodal-controls i.fa {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	font-size: 20px;
+	line-height: 34px;
+	text-align: center;
+	background: #fff;
+	color: #ccc;
+	border-radius: 36px;
+    -webkit-transition: all 0.165s ease;
+    -moz-transition: all 0.165s ease;
+    -ms-transition: all 0.165s ease;
+    -o-transition: all 0.165s ease;
+    transition: all 0.165s ease;
+}
+.jbmodal-box .jbmodal-controls i.fa:hover {
+	background: #ccc;
+	color: #000;
+    -webkit-transition: all 0.165s ease;
+    -moz-transition: all 0.165s ease;
+    -ms-transition: all 0.165s ease;
+    -o-transition: all 0.165s ease;
+    transition: all 0.165s ease;
+	cursor: pointer;
+}
+  
+.jbmodal-box .jbmodal-pagination {
+	
+}
+
+
+.jbmodal-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+	opacity: 0.8;
+}
+
+
+
+@media only screen 
+and (max-width :1079px) {
+	
+}
