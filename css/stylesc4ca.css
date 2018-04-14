@@ -426,6 +426,12 @@ table#aircraft img {
 	display:block;
 	position:relative;
 }
+#primary-nav a li a {
+	color:#000;
+	text-decoration:none !important;
+	display:block;
+	position:relative;
+}	
 #primary-nav li a i {
 	position:absolute;
 	top:20px;
