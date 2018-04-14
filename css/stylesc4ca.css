@@ -426,12 +426,6 @@ table#aircraft img {
 	display:block;
 	position:relative;
 }
-#primary-nav a li a {
-	color:#000;
-	text-decoration:none !important;
-	display:block;
-	position:relative;
-}	
 #primary-nav li a i {
 	position:absolute;
 	top:20px;
@@ -556,6 +550,7 @@ and (min-width :1200px) {
 #primary-nav ul > li a {
 	padding:20px 30px;
 	transition:none;
+	color: #FFF
 }
 #primary-nav ul > li a i {
 	color:#0884ca;
