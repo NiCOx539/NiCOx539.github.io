@@ -421,7 +421,7 @@ table#aircraft img {
 	overflow: hidden;
 }
 #primary-nav a {
-	color:#FFF;
+	color:#000;
 	text-decoration:none !important;
 	display:block;
 	position:relative;
