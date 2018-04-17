@@ -360,10 +360,11 @@ Aircraft Management Menu
 	
 	<!-- Management Form -->
 
-<form id="management" class="forms" action="https://www.c-rayavionics.com/aircraft-management" method="post" enctype="multipart/form-data" novalidate>
-    <input type="text" class="special" name="main_name:blank" value="" />
-    <input type="hidden" name="form_name" id="form_name" value="management-thanks" />
-    <input style="width:1px;height:1px;padding:0px;margin:0px;border:none;" readonly id="token" type="text" name="token" value=""  class="required"/>
+<form id="management" class="forms" action="https://www.c-rayavionics.com/<style>.quote .block {margin: 0 -30px 40px;}</style>
+<form id="mrq" class="quote forms" action="https://www.c-rayavionics.com/maintenance-request-quote" method="post" enctype="multipart/form-data" novalidate="novalidate">
+    <input type="text" class="special" name="main_name:blank" value="">
+    <input type="hidden" name="form_name" id="form_name" value="mrq-thanks">
+    <input style="width:1px;height:1px;padding:0px;margin:0px;border:none;" readonly="" id="token" type="text" name="token" value="" class="required" aria-required="true">
 	<script type="text/javascript" id="token-script">
 		 timeout = 0;
 		 human = 0;
@@ -394,51 +395,80 @@ Aircraft Management Menu
     <fieldset>
     
     
-    <div class="input-wrap">
-    
-    <input id="name" class="required" type="text" placeholder="Name (required)" name="name" value="Name (required)" />
-    </div>
-    <div class="input-wrap">
-    
-    <input id="phone" class="required" type="tel" placeholder="Phone (required)" name="phone" value="Phone (required)" /> 
-    </div>
-    <div class="input-wrap">
-    
-    <input id="email" class="required" type="email" placeholder="Email (required)" name="email" value="Email (required)" />
-    </div>
-    <div class="input-wrap">
-    
-	<input type="text" placeholder="Job Title" name="jobTitle" id="jobTitle" value="Job Title" />
-    </div>
-    <div class="input-wrap">
-    
-	<input type="text" placeholder="Company" name="company" id="company" value="Company" />
-    </div>
-    <hr />
-    <div class="input-wrap">
-    <label for="ownLease" class="show">Do you currently own or lease an aircraft?</label>
-    <input type="radio" name="ownLease" value="Yes" class="radio-btn" /><label class="radio-txt">Yes</label>
-    <input type="radio" name="ownLease" value="No" class="radio-btn" /><label class="radio-txt">No</label>
-    </div>
-    <div class="input-wrap">
-    <label for="fleet">Please describe your fleet:</label>
-    <textarea id="fleet" name="fleet" placeholder="Please describe your fleet:">Please describe your fleet:</textarea>
-    </div>
-    <div class="input-wrap">
-    <label for="aircraftBase">Where would you prefer your aircraft(s) to be based?</label>
-    <textarea id="aircraftBase" name="aircraftBase" placeholder="Where would you prefer your aircraft(s) to be based?">Where would you prefer your aircraft(s) to be based?</textarea>
-    </div>
-    
-    <hr />
-    
-    <div class="input-wrap">
-    <label for="part135" class="show">Are you interested in Part 135 management services?</label><br />
-    <input type="radio" name="part135" value="Yes" class="radio-btn left" /><label class="radio-txt" style="display:block">Yes, I would like my aircraft(s) to be made available for charter.</label>
-    <br class="clear" />
-    <input type="radio" name="part135" value="No" class="radio-btn left" /><label class="radio-txt" style="display:block">No, I am interested in Part 91 management only.</label>
-    </div>
+
+	<div class="block">
+		<legend>Maintenance Information</legend>
+		<!-- Aircraft Type -->
+		<div class="inner first">
+            <div class="input-wrap">
+			<input type="text" class="required" name="aircraftType" id="aircraftType" placeholder="Aircraft Type *" value="Aircraft Type *" aria-required="true">
+		    </div>
+		</div>
+		
+		<div class="inner">
+            <div class="input-wrap">
+			<input type="text" class="required" name="aircraftSN" id="aircraftSN" placeholder="Aircraft SN *" value="Aircraft SN *" aria-required="true">
+		    </div>
+		</div>
+		<div class="inner">
+            <div class="input-wrap">
+			<input type="text" class="required" name="aircraftREG" id="aircraftREG" placeholder="Aircraft REG *" value="Aircraft REG *" aria-required="true">
+		    </div>
+		</div>
+		<!-- Scope of Work -->
+		<div class="inner last">
+            <div class="input-wrap">
+			<textarea class="required" id="scopeOfWork" name="scopeOfWork" placeholder="Scope of Work *" aria-required="true">Scope of Work *</textarea>
+		    </div>
+		</div>
+	</div>
+	
+	<!--CONTACT INFORMATION -->
+	<div class="contact-info block">
+	<legend>Contact Information</legend>
+		<div class="inner first clearfix">			
+            <div class="input-wrap left w40">
+            
+            <input id="name" class="required" type="text" placeholder="First Name *" name="name" value="First Name *" aria-required="true">
+            </div>
+            <div class="input-wrap left w40">
+            
+            <input id="lname" class="required" type="text" placeholder="Last Name *" name="lname" value="Last Name *" aria-required="true">
+            </div>
+		</div>
+        <hr>
+        
+        <div class="inner clearfix">
+            <div class="input-wrap left w40">
+            
+            <input id="phone" class="required" type="tel" placeholder="Phone *" name="phone" value="Phone *" aria-required="true"> 
+            </div>
+            <div class="input-wrap left w40">
+            
+            <input id="email" class="required" type="email" placeholder="Email *" name="email" value="Email *" aria-required="true">
+            </div>
+        </div>
+        <hr>
+		<div class="inner last clearfix">
+            <div class="input-wrap left w40">
+            
+			<input type="text" placeholder="Job Title *" name="jobTitle" id="jobTitle" value="Job Title *" class="required" aria-required="true">
+            </div>
+            <div class="input-wrap left w40">
+            
+			<input type="text" placeholder="Company *" name="company" id="company" value="Company *" class="required" aria-required="true">
+            </div>
+		</div>
+	</div>
+	
+	<div class="block">
+	<legend>Questions/Comments</legend>
+        <div class="input-wrap">
+        <textarea id="comments" name="comments" placeholder="Comments">Comments</textarea>
+        </div>
+	</div>
     </fieldset>
-    <input type="hidden" value="managementVar" class="managementVar" name="managementVar" id="managementVar" />
+    <input type="hidden" value="mrqVar" class="mrqVar" name="mrqVar" id="mrqVar">
     <button type="submit" class="submit"><span>Submit</span> <i class="fa fa-plane"></i></button>
 </form>
 <!-- /Management Inquiry Form -->
